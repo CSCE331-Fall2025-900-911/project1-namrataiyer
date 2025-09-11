@@ -1,20 +1,87 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Portfolio Title -->
+        <h1 class="portfolio-title">Portfolio</h1>
+        
+        <!-- Introduction Text -->
+        <div class="intro-text">
+            <p>Here are some of the projects I have worked on:</p>
+        </div>
 
-<title>Portfolio Page</title>
+        <!-- Games Section -->
+        <div class="section-container">
+            <h2 class="section-heading">Games</h2>
+            
+            <div class="project-grid">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="flappy-bird.jpg" alt="Flappy Bird Game">
+                    </div>
+                    <div class="project-description">
+                        <h3>Flappy Bird</h3>
+                        <p>A simple web-based game where the player controls a bird trying to fly between columns of pipes without hitting them. Built using Unity and C#.</p>
+                    </div>
+                </div>
 
-<h2>Portfolio</h2>
-<p>Here are some of the projects I have worked on:</p>
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="wordle.jpg" alt="Wordle Game">
+                    </div>
+                    <div class="project-description">
+                        <h3>Wordle</h3>
+                        <p>A word puzzle game where players have six attempts to guess a five-letter word. Implemented with Unity and C#.</p>
+                    </div>
+                </div>
 
-<h3>Games</h3>
-<ul>
-    <li>Flappy Bird: A simple web-based game where the player controls a bird trying to fly between columns of pipes without hitting them. Built using Unity and C#.</li>
-    <li>Wordle: A word puzzle game where players have six attempts to guess a five-letter word. Implemented with Unity and C#.</li>
-    <li><a href="https://devpost.com/software/squid-game-credit-quiz">Squid Games</a>: A financial literacy game inspired by the popular TV show, featuring a tug of war quiz game. Developed using Unity and C#.</li>
-</ul>
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="squid-games.jpg" alt="Squid Games">
+                    </div>
+                    <div class="project-description">
+                        <h3><a href="https://devpost.com/software/squid-game-credit-quiz">Squid Games</a></h3>
+                        <p>A financial literacy game inspired by the popular TV show, featuring a tug of war quiz game. Developed using Unity and C#.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<h3>Apps</h3>
-<ul>
-    <li><a href="https://devpost.com/software/stock-sense">Stock Sense: A stock price prediction app that uses machine learning to predict future stock prices based on historical data. Built with Python ans Swift.</li>
-    <li>Food Truck: A grilled cheese food truck app that allows customers to purchas food and drinks and updates stock in real time. Developed using Java and JavaFX.</li>
-</ul>
+        <!-- Apps Section -->
+        <div class="section-container">
+            <h2 class="section-heading">Apps</h2>
+            
+            <div class="project-grid apps-grid">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="stock-sense.jpg" alt="Stock Sense App">
+                    </div>
+                    <div class="project-description">
+                        <h3><a href="https://devpost.com/software/stock-sense">Stock Sense</a></h3>
+                        <p>A stock price prediction app that uses machine learning to predict future stock prices based on historical data. Built with Python and Swift.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="food-truck.jpg" alt="Food Truck App">
+                    </div>
+                    <div class="project-description">
+                        <h3>Food Truck</h3>
+                        <p>A grilled cheese food truck app that allows customers to purchase food and drinks and updates stock in real time. Developed using Java and JavaFX.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

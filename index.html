@@ -1,39 +1,75 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css">
-
-<title>Landing Page</title>
-
-<h2>hi, my name is</h2>
-<h1>Namrata Iyer</h1>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namrata Iyer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <img src="namrata.jpg" alt="namrata" width="400" height="300">
-    <p>I am a junior at Texas A&M University, majoring in Computer Science and minoring in Economics. I am from Plano, Texas. My favorite hobbies include reading, dancing, and playing tennis.</p>
-
-
-
-    <h2><a href="portfolio.html">Portfolio</a></h2>
-    <p>Games: Flappy Bird, Wordle, Squid Games...<br> Apps: Stock Sense, Food Truck...</p>
-
-
-    <h2><a href="qualifications.html">Qualifications</a></h2>
-    <p>Expereince: Software Engineering Intern - Nihon Edutech... <br> Education: Texas A&M: BS Computer Science</p>
-
-
-
-    <h2><a href="service.html">Service</a></h2>
-    <p>I currently serve as secretary for my university's Hindu YUVA chapter. Learn more here!</p>
-
-
-
-    <h2><a href="genai.html">Dance</a></h2>
-    <p>Recently, I completed my Bharathanatyam Arangetram. Learn more about my dance journey here!</p>
-
-
-
-    <h2>Contact Me</h2>
-    <p>Email: namiyer35@gmail.com</p>
-    <p>Phone: (469)-343-6343</p>
-    <p><a href="https://www.linkedin.com/in/namrata-iyer/">LinkedIn</a></p>
-    <p><a href="https://github.com/namiyer">GitHub</a></p>
+    <div class="container">
+        <h1 class="main-title">Namrata Iyer</h1>
+        <div class="intro">
+            <div class="me">
+                <!-- i need to add a new image but im waiting for my headshot from career fair lol -->
+                <img src="namrata.jpg" alt="namrata" width="400" height="300" object-fit="cover" border-radius="10px" box-shadow="0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+            <div class="description-box">
+                <p>I am a junior at Texas A&M University, majoring in Computer Science and minoring in Economics. I am from Plano, Texas. My favorite hobbies include reading, dancing, and playing tennis.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <h2><a href="portfolio.html">Portfolio</a></h2>
+            </div>
+            <div class="section-content">
+                <p>Games: Flappy Bird, Wordle, Squid Games...<br>Apps: Stock Sense, Food Truck...</p>
+            </div>
+        </div>
+        <div class="section reverse">
+            <div class="section-title">
+                <h2><a href="qualifications.html">Qualifications</a></h2>
+            </div>
+            <div class="section-content">
+                <p>Experience: Software Engineering Intern - Nihon Edutech...<br>Education: Texas A&M: BS Computer Science</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <h2><a href="service.html">Service</a></h2>
+            </div>
+            <div class="section-content">
+                <p>I currently serve as secretary for my university's Hindu YUVA chapter. Learn more here!</p>
+            </div>
+        </div>
+        <div class="section reverse">
+            <div class="section-title">
+                <h2><a href="genai.html">Dance</a></h2>
+            </div>
+            <div class="section-content">
+                <p>Recently, I completed my Bharathanatyam Arangetram. Learn more about my dance journey here!</p>
+            </div>
+        </div>
+        <div class="contact-section">
+            <h2 class="contact-title">Contact Me</h2>
+            <div class="contact-box">
+                <div class="contact-item">
+                    <strong>Email:</strong><br>
+                    <a href="mailto:namiyer35@gmail.com">namiyer35@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong><br>
+                    (469)-343-6343
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong><br>
+                    <a href="https://www.linkedin.com/in/namrata-iyer/">LinkedIn Profile</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong><br>
+                    <a href="https://github.com/namiyer">GitHub Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
