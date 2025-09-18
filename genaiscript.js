@@ -14,6 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add animation effects
     addScrollAnimations();
+
+    // --- NEW: Load all 8 photos into the grid ---
+    for (let i = 1; i <= 8; i++) {
+        // Assumes photos are named photo1.jpg, photo2.jpg, etc.
+        const imageUrl = `photo${i}.jpg`; 
+        loadPhoto(i, imageUrl, `Performance Photo ${i}`);
+    }
 });
 
 /**
@@ -100,7 +107,6 @@ function handlePhotoClick(photoElement, photoNumber) {
     // Here you can add functionality like:
     // - Opening a lightbox/modal
     // - Displaying photo details
-    // - Loading the actual image
 }
 
 /**
@@ -161,30 +167,8 @@ function addAnimationStyles() {
 }
 
 /**
- * Utility function to replace video placeholder with actual YouTube embed
- * Call this function with your YouTube video ID
- */
-function embedYouTubeVideo(videoId) {
-    const videoContainer = document.querySelector('.video-container');
-    const placeholder = document.querySelector('.video-placeholder');
-    
-    if (videoContainer && placeholder && videoId) {
-        const iframe = document.createElement('iframe');
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.setAttribute('frameborder', '0');
-        
-        // Remove placeholder and add iframe
-        placeholder.remove();
-        videoContainer.appendChild(iframe);
-        
-        console.log(`YouTube video ${videoId} embedded successfully`);
-    }
-}
-
-/**
  * Utility function to replace photo placeholder with actual image
- * Call this function with the photo number (1-15) and image URL
+ * Call this function with the photo number (1-8) and image URL
  */
 function loadPhoto(photoNumber, imageUrl, altText = '') {
     const placeholder = document.querySelector(`[data-photo="${photoNumber}"]`);
@@ -196,32 +180,14 @@ function loadPhoto(photoNumber, imageUrl, altText = '') {
         
         // Add loading behavior
         img.onload = function() {
-            placeholder.innerHTML = '';
+            placeholder.innerHTML = ''; // Clear the placeholder content
             placeholder.appendChild(img);
             placeholder.classList.add('loaded');
         };
         
         img.onerror = function() {
             console.error(`Failed to load image for photo ${photoNumber}: ${imageUrl}`);
+            placeholder.innerHTML = `<span>Image not found</span>`; // Show error in placeholder
         };
     }
 }
-
-/**
- * Utility function to update the biography section
- * Call this function with your biography text
- */
-function updateBiography(bioText) {
-    const bioPlaceholder = document.querySelector('.bio-placeholder');
-    
-    if (bioPlaceholder && bioText) {
-        bioPlaceholder.innerHTML = `<p>${bioText.replace(/\n\n/g, '</p><p>')}</p>`;
-        bioPlaceholder.style.fontStyle = 'normal';
-        bioPlaceholder.style.textAlign = 'left';
-    }
-}
-
-// Export functions for global use
-window.embedYouTubeVideo = embedYouTubeVideo;
-window.loadPhoto = loadPhoto;
-window.updateBiography = updateBiography;
