@@ -1,0 +1,716 @@
+/* Alternative Theme - Muted Colors with Sidebar */
+/* Color Palette (Inverted for darker theme):
+   #1b2f33 - Deep teal (backgrounds)
+   #95190c - Burgundy (backgrounds/accents)
+   #846c5b - Warm brown (backgrounds)
+   #acbfa4 - Sage green (text/accents)  
+   #e2e8ce - Light cream (main text)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b2f33;
+    color: #e2e8ce;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 250px;
+    background-color: #95190c;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #acbfa4;
+}
+
+.sidebar-logo h2 {
+    color: #e2e8ce;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Qualifications Page Alt Theme Styles */
+.qualifications-title-alt {
+    color: #e2e8ce;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: bold;
+}
+
+/* Stacked Info Boxes */
+.info-stack-alt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.info-box-alt {
+    background-color: #846c5b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-left: 5px solid #95190c;
+}
+
+.info-heading-alt {
+    color: #acbfa4;
+    font-size: 2.2em;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #95190c;
+    padding-bottom: 10px;
+}
+
+/* Skills List Styling */
+.info-box-alt ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box-alt li {
+    color: #e2e8ce;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: rgba(27, 47, 51, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #acbfa4;
+}
+
+/* Areas of Interest Text */
+.info-box-alt p {
+    color: #e2e8ce;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(27, 47, 51, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #acbfa4;
+}
+
+/* Resume Section Alt */
+.resume-section-alt {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-heading-center-alt {
+    color: #acbfa4;
+    font-size: 2.5em;
+    margin: 0 0 30px 0;
+    font-weight: bold;
+    border-bottom: 3px solid #95190c;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.resume-container-alt {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #846c5b;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.resume-container-alt iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    border: 2px solid #acbfa4;
+}
+
+/* Service Page Alt Theme Styles */
+.service-title-alt {
+    color: #e2e8ce;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: bold;
+}
+
+/* Logo and Description Section */
+.logo-description-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.service-logo {
+    flex: 0 0 200px;
+    text-align: center;
+}
+
+.service-logo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #acbfa4;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.service-description-alt {
+    background-color: #846c5b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    flex: 1;
+    border-left: 5px solid #95190c;
+}
+
+.service-description-alt p {
+    color: #e2e8ce;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.service-description-alt p:last-of-type {
+    margin-bottom: 0;
+}
+
+.service-description-alt ul {
+    margin: 20px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.service-description-alt li {
+    color: #e2e8ce;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: rgba(27, 47, 51, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #acbfa4;
+}
+
+.service-description-alt a {
+    color: #acbfa4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.service-description-alt a:hover {
+    text-decoration: underline;
+    color: #e2e8ce;
+}
+
+/* Instagram and WhatsApp Section */
+.social-section-alt {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.instagram-embed-alt {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-embed-alt .instagram-media {
+    margin: 0 !important;
+    max-width: 100% !important;
+    background-color: #846c5b !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+.whatsapp-box {
+    flex: 0 0 300px;
+    background-color: #95190c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    border: 2px solid #acbfa4;
+}
+
+.whatsapp-box h3 {
+    color: #acbfa4;
+    font-size: 1.8em;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.whatsapp-box p {
+    color: #e2e8ce;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.whatsapp-box p:last-child {
+    margin-bottom: 0;
+}
+
+.whatsapp-box a {
+    color: #acbfa4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.whatsapp-box a:hover {
+    text-decoration: underline;
+    color: #e2e8ce;
+}
+
+/* Back Home Link Alt */
+.back-home-alt {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-home-alt h3 {
+    margin: 0;
+}
+
+.back-home-alt h3 a {
+    color: #acbfa4;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-home-alt h3 a:hover {
+    text-decoration: underline;
+    color: #e2e8ce;
+}
+
+.sidebar-nav {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 15px;
+}
+
+.sidebar-nav a {
+    color: #e2e8ce;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    background-color: #846c5b;
+    color: #acbfa4;
+    transform: translateX(5px);
+}
+
+.sidebar-nav a.active {
+    background-color: #1b2f33;
+    color: #acbfa4;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 250px;
+    flex: 1;
+    padding: 40px;
+    max-width: calc(100vw - 250px);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Hide default theme elements in alt theme */
+.main-title,
+.hero-section,
+.section,
+.section.reverse,
+.contact-section,
+.portfolio-title,
+.intro-text,
+.section-container,
+.qualifications-title,
+.resume-section,
+.info-grid,
+.service-title,
+.service-section,
+.instagram-section,
+.contact-info-section,
+.back-home {
+    display: none;
+}
+
+/* Theme Switcher Button */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #95190c;
+    color: #e2e8ce;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    background-color: #1b2f33;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Index Page Specific Styles */
+.profile-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #acbfa4;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.profile-name {
+    color: #e2e8ce;
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Bio Section */
+.bio-section {
+    background-color: #846c5b;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    border-left: 5px solid #acbfa4;
+}
+
+.bio-section p {
+    color: #e2e8ce;
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Contact Section */
+.contact-section-alt {
+    background-color: #95190c;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.contact-title-alt {
+    color: #acbfa4;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.contact-grid-alt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-item-alt {
+    background-color: #846c5b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #acbfa4;
+}
+
+.contact-item-alt strong {
+    color: #acbfa4;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.contact-item-alt a {
+    color: #e2e8ce;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-item-alt a:hover {
+    text-decoration: underline;
+    color: #acbfa4;
+}
+
+/* General Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #e2e8ce;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #acbfa4;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #acbfa4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e2e8ce;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .main-content {
+        margin-left: 200px;
+        padding: 20px;
+        max-width: calc(100vw - 200px);
+    }
+    
+    .profile-name {
+        font-size: 2.5em;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Portfolio Page Alt Theme Styles */
+.portfolio-title-alt {
+    color: #e2e8ce;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: bold;
+}
+
+.intro-text-alt {
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.intro-text-alt p {
+    color: #acbfa4;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Apps Section - Stacked Layout */
+.apps-section-alt {
+    margin-bottom: 60px;
+}
+
+.section-heading-alt {
+    color: #acbfa4;
+    font-size: 2.5em;
+    text-align: left;
+    margin: 0 0 30px 0;
+    font-weight: bold;
+    border-bottom: 3px solid #95190c;
+    padding-bottom: 10px;
+}
+
+.app-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+    background-color: #846c5b;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.app-image {
+    flex: 0 0 250px;
+}
+
+.app-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #acbfa4;
+}
+
+.app-description {
+    flex: 1;
+}
+
+.app-description h3 {
+    color: #acbfa4;
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+.app-description h3 a {
+    color: #acbfa4;
+    text-decoration: none;
+}
+
+.app-description h3 a:hover {
+    color: #e2e8ce;
+    text-decoration: underline;
+}
+
+.app-description p {
+    color: #e2e8ce;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Games Section - Grid Layout (same as default but dark) */
+.games-section-alt {
+    margin-bottom: 60px;
+}
+
+.games-grid-alt {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-item-alt {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #846c5b;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.game-image-alt {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.game-image-alt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-description-alt {
+    padding: 20px;
+}
+
+.game-description-alt h3 {
+    color: #acbfa4;
+    font-size: 1.5em;
+    margin: 0 0 12px 0;
+    font-weight: bold;
+}
+
+.game-description-alt h3 a {
+    color: #acbfa4;
+    text-decoration: none;
+}
+
+.game-description-alt h3 a:hover {
+    color: #e2e8ce;
+    text-decoration: underline;
+}
+
+.game-description-alt p {
+    color: #e2e8ce;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px;
+    }
+    
+    .sidebar-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .sidebar-nav li {
+        margin: 0;
+    }
+    
+    .sidebar-nav a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .profile-name {
+        font-size: 2em;
+    }
+    
+    .contact-grid-alt {
+        grid-template-columns: 1fr;
+    }
+}

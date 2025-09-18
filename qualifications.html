@@ -7,35 +7,73 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="qualifications-title">Qualifications</h1>
-        <div class="resume-section">
-            <h2 class="section-heading-center">Resume</h2>
-            <div class="resume-container">
-                <iframe src="https://drive.google.com/file/d/1oJ3rCmeI6ZwchNDEBH0JwCSMecoPmWJ9/preview" width="640" height="480" allow="autoplay"></iframe>
-            </div>
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <h2>NI</h2>
         </div>
-        <div class="info-grid">
-            <div class="project-item">
-                <div class="project-description">
-                    <h2>Skills</h2>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="qualifications.html" class="active">Qualifications</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="genai.html">Dance</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <h1 class="qualifications-title">Qualifications</h1>
+
+            <div class="resume-section">
+                <h2 class="section-heading-center">Resume</h2>
+                <div class="resume-container">
+                    <iframe src="https://drive.google.com/file/d/1oJ3rCmeI6ZwchNDEBH0JwCSMecoPmWJ9/preview" width="640" height="480" allow="autoplay"></iframe>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-box">
+                    <h2 class="info-heading">Skills</h2>
                     <ul>
                         <li>Programming Languages: Python, Java, C++, C#</li>
                         <li>Languages: English (Fluent), Tamil (Fluent), Spanish (Intermediate)</li>
                         <li>Certification: IB Diploma, Simplilearn Business Analytics in Excel</li>
                     </ul>
                 </div>
-            </div>
-            <div class="project-item">
-                <div class="project-description">
-                    <h2>Areas of Interest</h2>
+
+                <div class="info-box">
+                    <h2 class="info-heading">Areas of Interest</h2>
                     <p>Software Development, Machine Learning, Data Science, Web Development</p>
                 </div>
             </div>
-        </div>
-        <div>
-            <a href="index.html">Back to Home</a>
+
+            <h1 class="qualifications-title-alt">Qualifications</h1>
+
+            <div class="info-stack-alt">
+                <div class="info-box-alt">
+                    <h2 class="info-heading-alt">Skills</h2>
+                    <ul>
+                        <li>Programming Languages: Python, Java, C++, C#</li>
+                        <li>Languages: English (Fluent), Tamil (Fluent), Spanish (Intermediate)</li>
+                        <li>Certification: IB Diploma, Simplilearn Business Analytics in Excel</li>
+                    </ul>
+                </div>
+
+                <div class="info-box-alt">
+                    <h2 class="info-heading-alt">Areas of Interest</h2>
+                    <p>Software Development, Machine Learning, Data Science, Web Development</p>
+                </div>
+            </div>
+
+            <div class="resume-section-alt">
+                <h2 class="section-heading-center-alt">Resume</h2>
+                <div class="resume-container-alt">
+                    <iframe src="https://drive.google.com/file/d/1oJ3rCmeI6ZwchNDEBH0JwCSMecoPmWJ9/preview" width="640" height="480" allow="autoplay"></iframe>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="theme-switcher.js"></script>
 </body>
 </html>

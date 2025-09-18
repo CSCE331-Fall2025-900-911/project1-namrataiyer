@@ -7,81 +7,157 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Portfolio Title -->
-        <h1 class="portfolio-title">Portfolio</h1>
-        
-        <!-- Introduction Text -->
-        <div class="intro-text">
-            <p>Here are some of the projects I have worked on:</p>
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <h2>NI</h2>
         </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="qualifications.html">Qualifications</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="genai.html">Dance</a></li>
+        </ul>
+    </nav>
 
-        <!-- Games Section -->
-        <div class="section-container">
-            <h2 class="section-heading">Games</h2>
+    <div class="main-content">
+        <div class="container">
+            <h1 class="portfolio-title">Portfolio</h1>
             
-            <div class="project-grid">
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="flappy-bird.jpg" alt="Flappy Bird Game">
-                    </div>
-                    <div class="project-description">
-                        <h3>Flappy Bird</h3>
-                        <p>A simple web-based game where the player controls a bird trying to fly between columns of pipes without hitting them. Built using Unity and C#.</p>
-                    </div>
-                </div>
+            <div class="intro-text">
+                <p>Here are some of the projects I have worked on:</p>
+            </div>
 
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="wordle.jpg" alt="Wordle Game">
+            <div class="section-container">
+                <h2 class="section-heading">Games</h2>
+                
+                <div class="project-grid">
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="flappy-bird.jpg" alt="Flappy Bird Game">
+                        </div>
+                        <div class="project-description">
+                            <h3>Flappy Bird</h3>
+                            <p>A simple web-based game where the player controls a bird trying to fly between columns of pipes without hitting them. Built using Unity and C#.</p>
+                        </div>
                     </div>
-                    <div class="project-description">
-                        <h3>Wordle</h3>
-                        <p>A word puzzle game where players have six attempts to guess a five-letter word. Implemented with Unity and C#.</p>
-                    </div>
-                </div>
 
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="squid-games.jpg" alt="Squid Games">
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="wordle.jpg" alt="Wordle Game">
+                        </div>
+                        <div class="project-description">
+                            <h3>Wordle</h3>
+                            <p>A word puzzle game where players have six attempts to guess a five-letter word. Implemented with Unity and C#.</p>
+                        </div>
                     </div>
-                    <div class="project-description">
-                        <h3><a href="https://devpost.com/software/squid-game-credit-quiz">Squid Games</a></h3>
-                        <p>A financial literacy game inspired by the popular TV show, featuring a tug of war quiz game. Developed using Unity and C#.</p>
+
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="squid-games.jpg" alt="Squid Games">
+                        </div>
+                        <div class="project-description">
+                            <h3><a href="https://devpost.com/software/squid-game-credit-quiz">Squid Games</a></h3>
+                            <p>A financial literacy game inspired by the popular TV show, featuring a tug of war quiz game. Developed using Unity and C#.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Apps Section -->
-        <div class="section-container">
-            <h2 class="section-heading">Apps</h2>
+            <div class="section-container">
+                <h2 class="section-heading">Apps</h2>
+                
+                <div class="project-grid apps-grid">
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="stock-sense.jpg" alt="Stock Sense App">
+                        </div>
+                        <div class="project-description">
+                            <h3><a href="https://devpost.com/software/stock-sense">Stock Sense</a></h3>
+                            <p>A stock price prediction app that uses machine learning to predict future stock prices based on historical data. Built with Python and Swift.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="food-truck.jpg" alt="Food Truck App">
+                        </div>
+                        <div class="project-description">
+                            <h3>Food Truck</h3>
+                            <p>A grilled cheese food truck app that allows customers to purchase food and drinks and updates stock in real time. Developed using Java and JavaFX.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="portfolio-title-alt">Portfolio</h1>
             
-            <div class="project-grid apps-grid">
-                <div class="project-item">
-                    <div class="project-image">
+            <div class="intro-text-alt">
+                <p>Here are some of the projects I have worked on:</p>
+            </div>
+
+            <div class="apps-section-alt">
+                <h2 class="section-heading-alt">Apps</h2>
+                
+                <div class="app-item">
+                    <div class="app-image">
                         <img src="stock-sense.jpg" alt="Stock Sense App">
                     </div>
-                    <div class="project-description">
+                    <div class="app-description">
                         <h3><a href="https://devpost.com/software/stock-sense">Stock Sense</a></h3>
                         <p>A stock price prediction app that uses machine learning to predict future stock prices based on historical data. Built with Python and Swift.</p>
                     </div>
                 </div>
 
-                <div class="project-item">
-                    <div class="project-image">
+                <div class="app-item">
+                    <div class="app-image">
                         <img src="food-truck.jpg" alt="Food Truck App">
                     </div>
-                    <div class="project-description">
+                    <div class="app-description">
                         <h3>Food Truck</h3>
                         <p>A grilled cheese food truck app that allows customers to purchase food and drinks and updates stock in real time. Developed using Java and JavaFX.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <a href="index.html">Back to Home</a>
+
+            <div class="games-section-alt">
+                <h2 class="section-heading-alt">Games</h2>
+                
+                <div class="games-grid-alt">
+                    <div class="game-item-alt">
+                        <div class="game-image-alt">
+                            <img src="flappy-bird.jpg" alt="Flappy Bird Game">
+                        </div>
+                        <div class="game-description-alt">
+                            <h3>Flappy Bird</h3>
+                            <p>A simple web-based game where the player controls a bird trying to fly between columns of pipes without hitting them. Built using Unity and C#.</p>
+                        </div>
+                    </div>
+
+                    <div class="game-item-alt">
+                        <div class="game-image-alt">
+                            <img src="wordle.jpg" alt="Wordle Game">
+                        </div>
+                        <div class="game-description-alt">
+                            <h3>Wordle</h3>
+                            <p>A word puzzle game where players have six attempts to guess a five-letter word. Implemented with Unity and C#.</p>
+                        </div>
+                    </div>
+
+                    <div class="game-item-alt">
+                        <div class="game-image-alt">
+                            <img src="squid-games.jpg" alt="Squid Games">
+                        </div>
+                        <div class="game-description-alt">
+                            <h3><a href="https://devpost.com/software/squid-game-credit-quiz">Squid Games</a></h3>
+                            <p>A financial literacy game inspired by the popular TV show, featuring a tug of war quiz game. Developed using Unity and C#.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="theme-switcher.js"></script>
 </body>
 </html>
